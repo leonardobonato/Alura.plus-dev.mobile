@@ -1,0 +1,437 @@
+:root{
+    --texto-branco-principal:#FFFFFF;
+    --texto-branco-secundario:#C0C0C0;
+    --fundo:#00030C;
+    --btn-azul:#167BF7;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: inter;
+  max-width: 100vw;
+  margin: 0 auto;
+  background-color: var(--fundo);
+  width: 1200px;
+}
+
+h1,h2,h3,h4,p{
+  color: var(--texto-branco-principal);
+  color: red;
+}
+
+
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+button{
+  width: 512px;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: var(--btn-azul);
+  color: var(--texto-branco-principal);
+}
+
+.btnAluraAssine{
+  margin-top: 54px;
+}
+
+.btnAluraPlus{  
+  background-color:transparent;
+  border: 1px solid #fff;
+  margin-top: 16px;
+}
+
+p{
+  color: var(--texto-branco-secundario);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 14px;
+}
+
+.ladoA{
+  position: absolute;
+  top: 0;
+  left: 50px;
+  margin-top: 127px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+ 
+
+}
+
+h2{
+  width: 588px;
+  top: 125px;
+  color: var(--texto-branco-principal);
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ladoA img{
+  margin-top: 22px;
+  width: 30vw;
+  
+}
+.ladoB img{
+  z-index: 0;
+  width: 100vw;
+  filter: brightness(0.6)
+}
+
+/* Seção 2--------------------------------- */
+
+.imgPlataformas{
+  width: 496px;
+  
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 586px;
+  margin-left: 69px;
+}
+
+.section2 h2, .section4 h2{
+  font-size: 3rem;
+  text-align: start;
+  color:var(--texto-branco-principal);
+  
+}
+
+.section2 p, .section3 p,.section4 p{
+  width: 588px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9F9;
+  text-align: start;
+  opacity: 0.80;
+  padding-right: 6rem;
+
+}
+
+/* Seção 3--------------------------------- */
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  width: 586px;
+  margin-right: 69px;
+}
+
+.section3 button{
+width: 162px;
+height: 56px;
+padding: 16px;
+margin-top: 32px;
+}
+
+.section5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 164px;
+  
+}
+
+.section5 h2{
+  width: 985px;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container img{
+  width: 339px;
+}
+
+.section5 p{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #C0C0C0;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.logo{
+  width: 76px;
+  margin-top:145px ;
+  margin-bottom: 40px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+}
+
+ul li{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+footer p{
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+/* ----RESPONSIVIDADE------------ */
+
+@media (max-width: 768px) {
+  body{
+  
+    /* background-color: red; */
+  }
+
+
+  button{
+    width: 312px;
+    margin-bottom: .3rem;
+  }
+
+
+  .ladoA{
+    left: 50px;
+    margin-top: 30px;
+  
+  }
+
+
+  .ladoB img{
+    z-index: 0;
+    width: 100vw;
+    filter: brightness(0.3)
+  }
+
+  
+/* Seção 2--------------------------------- */
+
+.section2 {
+  width: 586px;
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+
+.section2 h2, .section4 h2{
+  font-size: 1.5rem;
+  text-align: start;
+  color:var(--texto-branco-principal);
+  
+}
+
+.section2 p {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 9rem;
+}
+
+
+.imgPlataformas{
+  width: 40vw;
+  padding-top: 4rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+    
+  }
+  
+
+/* Seção 3--------------------------------- */
+  
+.imgTelas{
+  width: 40vw;
+
+  margin-right: 6rem;
+}
+
+.section3{
+  padding-left: 4rem;
+}
+
+.section3 p {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  padding-left: 3rem;
+}
+
+.section3 button{
+  width: 162px;
+  padding: 4px;
+  margin-top: 32px;
+  }
+
+/* Seção 4--------------------------------- */
+
+.imgNotebook{
+  width: 40vw;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+/* Seção 5--------------------------------- */
+
+.container img{
+  width: 18rem;
+}
+
+.section5 h2{
+  font-size: 1.5rem;
+}
+
+.container{
+  flex-wrap: wrap;
+  margin-inline: 6rem;
+}
+/* footer--------------------------------- */
+
+li{
+  margin: -10;
+  padding: -10;
+}
+
+ul li{
+  padding: 1rem;
+  font-size: 12px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+footer div{
+justify-content: center;
+align-items: center;
+padding: -1rem;
+margin: -90;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 1024px) {
+
+
+  .ladoA{
+    width: 30%;
+    top: 0;
+    left: 50px;
+    }
+  
+  .ladoB img{
+    width: 100vw;
+  }
+
+/* Seção 2--------------------------------- */
+
+.section2 {
+  width: 586px;
+  margin-left: 2rem;
+}
+
+.section2 h2, .section4 h2{
+  font-size: 2rem;
+  text-align: start;
+  color:var(--texto-branco-principal);
+  
+}
+
+  .imgPlataformas{
+    width: 40vw;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    
+  }
+  
+
+/* Seção 3--------------------------------- */
+  
+.imgTelas{
+  width: 40vw;
+  padding-right: 4rem;
+
+}
+
+.section3{
+  padding-left: 6rem;
+}
+
+/* Seção 4--------------------------------- */
+
+.imgNotebook{
+  width: 40vw;
+  padding-left: 4rem;
+  padding-top: 4rem;
+}
+
+/* Seção 5--------------------------------- */
+
+.container img{
+  width: 18rem;
+}
+
+/* footer--------------------------------- */
+
+
+ul li{
+  padding: 4rem;
+  font-size: 14px;
+}
+
+footer div{
+justify-content: centera;
+align-items: center;
+padding: 4rem;
+}
+
+
+}
